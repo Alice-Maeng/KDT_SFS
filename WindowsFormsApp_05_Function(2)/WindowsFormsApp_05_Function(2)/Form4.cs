@@ -197,7 +197,7 @@ namespace WindowsFormsApp_05_Function_2_
                {
                       배열의 항목 하나씩 사용
                }
-             */
+            
           
             string[] fruits = { "사과", "바나나", "포도", "딸기" };
             foreach(string fruit in fruits)
@@ -205,7 +205,7 @@ namespace WindowsFormsApp_05_Function_2_
                 Console.WriteLine(fruit);
             }
 
-            
+             */
             Console.WriteLine("----------------------------");
 
             /*
@@ -239,24 +239,40 @@ namespace WindowsFormsApp_05_Function_2_
             */
             #endregion
 
-            /*
-            #region Quiz5 - 랜덤 성적표 
 
-            int array_size = 5;
-            int[] student = new int[array_size];
-            for (int i = 0; i < array_size; i++)
-            {
-                Random rnd = new Random();
-                student[i] = rnd.Next(0,100);
-            }
+            
 
-            #endregion
-            */
+            
+            
+            
         }
 
+        #region Quiz5 - 랜덤 성적표
         private void button1_Click(object sender, EventArgs e)
         {
+            int array_size;
+
+            if (int.TryParse(textBox_sn.Text, out array_size))
+            {
+                int[] student = new int[array_size];
+                Random rnd = new Random();
+
+                textBox_result.Text = "";
+
+                for (int i = 0; i < array_size; i++)
+                {
+                    student[i] = rnd.Next(0, 101);
+                    textBox_result.Text += "학생" + (i + 1) + "번: " 
+                                        + student[i].ToString() + "점\r\n";
+                }
+            }
+
+            else
+            {
+                textBox_result.Text = "학생수를 입력해주세요.";
+            }
 
         }
+        #endregion
     }
 }
