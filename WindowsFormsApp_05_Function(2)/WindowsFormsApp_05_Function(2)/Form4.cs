@@ -239,12 +239,6 @@ namespace WindowsFormsApp_05_Function_2_
             */
             #endregion
 
-
-            
-
-            
-            
-            
         }
 
         #region Quiz5 - 랜덤 성적표
@@ -255,15 +249,16 @@ namespace WindowsFormsApp_05_Function_2_
             if (int.TryParse(textBox_sn.Text, out array_size))
             {
                 int[] student = new int[array_size];
+                string[] names = new string[array_size];
                 Random rnd = new Random();
 
                 textBox_result.Text = "";
 
                 for (int i = 0; i < array_size; i++)
                 {
+                    names[i] = $"학생{i+1}";
                     student[i] = rnd.Next(0, 101);
-                    textBox_result.Text += "학생" + (i + 1) + "번: " 
-                                        + student[i].ToString() + "점\r\n";
+                    textBox_result.Text += Aa(names[i], student[i]);
                 }
             }
 
@@ -273,6 +268,20 @@ namespace WindowsFormsApp_05_Function_2_
             }
 
         }
+
+        string Aa (string name, int score)
+        {
+            return $"{name}의 점수 : {score}점 \r\n";
+        }
+
+        /* 
+         * int.TryParse(string입력 값, out 변수) 
+         *  ㄴ 사용자 입력이 숫자인지, 아닌지 안전하게 확인해주는 메서드.
+         *  ㄴ 문자열을 숫자로 변환할 때, 변환이 가능한 경우에만 값을 저장하고 true 반환 
+         *  ㄴ 반환에 실패하더라도 오류를 발생시키지않고 false를 반환함
+         *  ㄴ 문자열을 int로 바꿔보려고 시도해서, 성공하면 그 값을 number 저장하고 true를 반환한다. 
+         */
+
         #endregion
     }
 }
