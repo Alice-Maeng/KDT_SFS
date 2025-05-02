@@ -15,6 +15,10 @@ namespace WindowsFormsApp_05_Function_2_
         public Form5()
         {
             InitializeComponent();
+            Addfile addfile = new Addfile();
+            int resultSum = addfile.Sum(1,2);
+
+            double value = addfile.d_value;
 
             #region #While문
             /*
