@@ -162,7 +162,11 @@ namespace WindowsFormsApp_05_Function_2_
         }
 
         //승,패,무승부 구현하기
-        private result Judge(game alice, game jack)
+        result Judge(game alice, game jack)
+        /*
+         * result : 결과로 반환되는 데이터의 자료형(열거형)
+         * win, draw, lose 셋 중 하나의 값을 결과로 내놓겠다는 뜻
+         */
         {
 
             if (alice == jack)
@@ -207,6 +211,7 @@ namespace WindowsFormsApp_05_Function_2_
 
             }
 
+            //초기화 함수
             if (score_a > 2 || score_j > 2)
             {
                 score_a = 0;
