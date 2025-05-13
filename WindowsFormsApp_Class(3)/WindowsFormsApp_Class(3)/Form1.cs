@@ -16,7 +16,7 @@ namespace WindowsFormsApp_Class_3_
         {
             InitializeComponent();
 
-            #region 연습
+            #region #연습1
             // #1. 자식 객체 생성
             Sword sword = new Sword();
             sword.Name = "롱소드";
@@ -71,8 +71,8 @@ namespace WindowsFormsApp_Class_3_
 
             #endregion
 
-            #region 실습
-            
+            #region #실습1
+
             Dog dog = new Dog();
             Animal animal1 = new Dog();
             animal1.Name = "강아지";
@@ -94,6 +94,36 @@ namespace WindowsFormsApp_Class_3_
             //animal3.bv();
             ((Bird)animal3).bv();
 
+        
+            Console.WriteLine("=========================");
+            Console.ReadLine();
+            #endregion
+
+            #region #연습2
+
+            Console.WriteLine("======오버로드 예시========");
+            Beverage basic = new Beverage();
+            basic.Order();
+            basic.Order("콜드브루");
+            basic.Order("콜드브루", "Tall");
+
+            Console.WriteLine("=======오버로드 예시========");
+            Beverage americano = new Americano(); //업캐스팅
+
+            //[참고]
+            //americano 변수는 부모 타입인 Beverage로 선언되어 있지만, 실제로는 자식 객체인 Americano를 가르키고 있음
+            americano.Prepare(); //오버라이드된 메서드 호출  
+
+            Console.WriteLine("========Sealed 예시========");
+            Beverage latte = new Latte();
+            latte.Prepare();        // 더 이상 오버라이드 불가능한 메서드
+
+            //ColdBrew 메서드는 사용 X --- override는 못할뿐, 호출은 가능 
+            Beverage coldbrew = new ColdBrew();
+            coldbrew.Prepare();
+
+            Beverage coldbrew2 = new ColdBrew2();
+            coldbrew2.Prepare();
 
             #endregion
         }
