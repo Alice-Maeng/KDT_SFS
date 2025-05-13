@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WindowsFormsApp_miniproject_calculator")]
+[assembly: AssemblyTitle("WindowsFormsApp_Advanced Function")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("WindowsFormsApp_miniproject_calculator")]
+[assembly: AssemblyProduct("WindowsFormsApp_Advanced Function")]
 [assembly: AssemblyCopyright("Copyright ©  2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("36e295e9-bd18-4811-b4b8-28ff642f19a3")]
+[assembly: Guid("14f24954-464d-4dc2-a8d6-aef17c87b636")]
 
 // Version information for an assembly consists of the following four values:
 //

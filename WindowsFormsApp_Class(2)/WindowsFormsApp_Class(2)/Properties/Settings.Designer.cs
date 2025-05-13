@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsFormsApp_miniproject_calculator.Properties
+namespace WindowsFormsApp_Class_2_.Properties
 {
 
 

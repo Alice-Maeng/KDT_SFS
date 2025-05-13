@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp_MiniPj_Calculator", "WindowsFormsApp_MiniPj_Calculator\WindowsFormsApp_MiniPj_Calculator.csproj", "{68F0818C-4A2B-4413-A7EE-970A93102D27}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp_Advanced Function", "WindowsFormsApp_Advanced Function\WindowsFormsApp_Advanced Function.csproj", "{14F24954-464D-4DC2-A8D6-AEF17C87B636}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{68F0818C-4A2B-4413-A7EE-970A93102D27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68F0818C-4A2B-4413-A7EE-970A93102D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68F0818C-4A2B-4413-A7EE-970A93102D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68F0818C-4A2B-4413-A7EE-970A93102D27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14F24954-464D-4DC2-A8D6-AEF17C87B636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14F24954-464D-4DC2-A8D6-AEF17C87B636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14F24954-464D-4DC2-A8D6-AEF17C87B636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14F24954-464D-4DC2-A8D6-AEF17C87B636}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {33A6600C-97EF-4A4F-9D8E-A4CFC29A4DD0}
+		SolutionGuid = {56B83061-0AE1-40B1-BD16-669C57579E9C}
 	EndGlobalSection
 EndGlobal
