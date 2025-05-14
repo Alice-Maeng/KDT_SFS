@@ -83,7 +83,6 @@ namespace WindowsFormsApp_Ref
             Console.WriteLine($"[ref] 배열 값: {string.Join(", ", refExample)}");
             Console.ReadLine();
 
-
             //2번 문제
             int[] outExample;
             int aOut = 5; 
@@ -91,9 +90,9 @@ namespace WindowsFormsApp_Ref
             Array2(out outExample, aOut);
             Console.WriteLine($"[out] 배열 값: {string.Join(", ", outExample)}");
 
-
-
             #endregion
+
+            Console.ReadLine();
 
         }
 
@@ -123,14 +122,14 @@ namespace WindowsFormsApp_Ref
         }
         #endregion
 
-        #region #실습
+        #region #실습. 값의 참조
 
         void Array1 (ref int xRef, ref int[] refExample)
         {
             
-            for (xRef=0; xRef < refExample.Length; xRef++)
+            for (int i=0; i < refExample.Length; i++)
             {
-                refExample[xRef] = xRef +1;
+                refExample[i] = i +1;
             }
         }
 

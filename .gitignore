@@ -150,7 +150,7 @@ _TeamCity*
 coverage*.json
 coverage*.xml
 coverage*.info
-
+Prj.Calculator/
 # Visual Studio code coverage results
 *.coverage
 *.coveragexml
