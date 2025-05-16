@@ -40,14 +40,14 @@ namespace WindowsFormsApp_Delegate
             List<Product> expnesive = ProductFilter.Filter(items, p => p.Price >= 1000000);
             foreach (Product item in expnesive)
             {
-                Console.WriteLine(item.ToString());
+                Console.WriteLine($"-{item}"); // item은 Product 클래스 객체라서 오버라이딩된 Tostring 클래스 호출됨.
             }
 
             Console.WriteLine("\n[가구 카테고리 제품]");
-            List<Product> cate = ProductFilter.Filter(items, p => p.Category == "가구");
-            foreach (Product item in cate)
+            List<Product> furniture = ProductFilter.Filter(items, p => p.Category == "가구");
+            foreach (Product item in furniture)
             {
-                Console.WriteLine(item.ToString());
+                Console.WriteLine($"-{item}");
             }
 
         }
